@@ -5,28 +5,40 @@
  */
 package ejemplos03;
 
-import ejemplos01.*;
+//import ejemplos01.*;
+import java.util.Scanner;
+
 
 /**
  *
  * @author reroes
  */
-public class Ejemplo081 {
+public class Ejemplo0811 {
 
     public static void main(String[] args) {
-        // 
-        String mensajeSuma;
-        String mensajeSumaDos;
-        mensajeSuma = obtenerTablaSumar(10, 9); // se invoca al método 
-                                                       // obtenerTablaSumar
-                                                       // y el valor que 
-                                                       // devuelve se lo 
-                                                       // almacena  en mensajeSuma
+        Scanner datos = new Scanner (System.in);
         
-        mensajeSumaDos = obtenerTablaMultiplicar(10, 9);
         
-        System.out.printf("%s\n", mensajeSuma);
-        System.out.printf("%s\n", mensajeSumaDos);
+        String mensaje = "";
+               int  limite;
+              int   tabla; 
+                 int opcion;
+                 System.out.println("ingrese el limite de la tabla");
+                 limite = datos.nextInt();
+                 System.out.println("ingrese  una tabla");
+                 tabla = datos.nextInt();
+                 System.out.println("ingrese la opcion a realizar con la tabla (1)suma , (2) multiplicacion");
+                 opcion = datos.nextInt();
+                     switch (opcion) {
+            case 1:
+                mensaje = obtenerTablaSumar(limite, tabla);
+                break;
+            case 2:
+                 mensaje = obtenerTablaMultiplicar(limite, tabla);
+        }
+        
+        System.out.printf("%s\n", mensaje);
+            
     }
         
     public static String obtenerTablaSumar(int limite, int tabla){
