@@ -18,8 +18,8 @@ public class Ejemplo0811 {
     public static void main(String[] args) {
         Scanner datos = new Scanner (System.in);
         
-        
-        String mensaje = "";
+       
+          String mensaje = "";
                int  limite;
               int   tabla; 
                  int opcion;
@@ -33,7 +33,7 @@ public class Ejemplo0811 {
             case 1:
                 mensaje = obtenerTablaSumar(limite, tabla);
                 break;
-            case 2:
+            case 2: 
                  mensaje = obtenerTablaMultiplicar(limite, tabla);
         }
         

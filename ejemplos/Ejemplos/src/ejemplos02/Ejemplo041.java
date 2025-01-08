@@ -25,7 +25,12 @@ public class Ejemplo041 {
             }
         }
         
-        obtenerReporte(arreglo1);
+        obtenerReporte(arreglo1);for (int i = 0; i < arreglo1.length; i++) {
+            for (int j = 0; j < arreglo1[i].length; j++) {
+                arreglo3[i][j] = obtenerMultiplicacion(arreglo1[i][j], 
+                        arreglo2[i][j]);
+            }
+        }
         obtenerReporte(arreglo2);
         obtenerReporte(arreglo3);
     }
