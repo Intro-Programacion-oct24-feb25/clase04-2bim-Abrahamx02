@@ -46,7 +46,7 @@ public class Ejemplo01 {
         }
         
         System.out.printf("%s\n", cadenaFinal);
-    }
+    }e
     
     public static String obtenerMultiplicacionDos(int tabla, int limite){
         String cadenaFinal = "";

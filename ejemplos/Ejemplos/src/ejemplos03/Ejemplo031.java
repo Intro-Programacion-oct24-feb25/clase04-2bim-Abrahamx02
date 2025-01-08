@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejemplos01;
+package ejemplos03;
 
 /**
  *
  * @author reroes
  */
+import ejemplos01.*;
 import java.util.Scanner;
-public class Ejemplo03 {
+public class Ejemplo031 {
 
     public static void main(String[] args) {
         Scanner datos =  new Scanner (System.in);
