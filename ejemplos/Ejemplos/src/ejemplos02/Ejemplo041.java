@@ -7,9 +7,16 @@ package ejemplos02;
 
 /**
  *
- * @author reroes
+ * @author reroesina
  */
 public class Ejemplo041 {
+    /*
+    existen 3 arreglos bidimensionales los cuales 2 estan asignados y a uno le falta asignacion, existe un doble 
+    ciclo repetitivo para poder asignar valores a arreglo 3 mediante la multiplicacion de valores del arreglo1 y 
+    arreglo2 
+    y mediante un procedimiento llamado obtener reporte puedo imprimir los resultados 
+    la multiplicacion de valores se los hace mediante la funcion obtenermultiplicacion
+    */
 
     public static void main(String[] args) {
         // 
@@ -25,12 +32,7 @@ public class Ejemplo041 {
             }
         }
         
-        obtenerReporte(arreglo1);for (int i = 0; i < arreglo1.length; i++) {
-            for (int j = 0; j < arreglo1[i].length; j++) {
-                arreglo3[i][j] = obtenerMultiplicacion(arreglo1[i][j], 
-                        arreglo2[i][j]);
-            }
-        }
+        obtenerReporte(arreglo1);
         obtenerReporte(arreglo2);
         obtenerReporte(arreglo3);
     }
